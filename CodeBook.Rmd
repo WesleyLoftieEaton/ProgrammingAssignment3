@@ -1,0 +1,24 @@
+---
+title: "CodeBook for tidy.data.txt"
+output: github_document
+---
+
+A code book that describes the variables, the data, and any transformations or work that you performed to clean up the data
+
+tidy.data.txt is a table containing the combined and summarized data for the test and training data downloaded from 
+
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.
+
+The files used to construct tidy.data.txt are
+
+activity_labels.txt
+features.txt
+subject_test.txt
+X_test.txt
+y_test.txt
+subject_train.txt
+X_train.txt
+y_train.txt
+
+The X_test and X_train datasets were combined and only the measurements on the mean and standard deviation for each measurement was extracted. The resulting data table was then labelled with the corresponding activity descriptions and subject key. Finally the data was manipulated to present only the average of each variable for each activity and each subject. Whether the data originated from the test or training datasets can be derived from subject_test.txt and subject_train.txt
+
